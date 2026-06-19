@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Chandni Verma | Remote Sensing & GIS Professional</title>
+<title>Chandni Verma | Remote Sensing & Geospatial Professional</title>
 
 <style>
 
@@ -12,6 +13,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
@@ -23,12 +25,12 @@ line-height:1.6;
 
 .container{
 width:90%;
-max-width:1200px;
+max-width:1100px;
 margin:auto;
 }
 
 section{
-padding:60px 0;
+padding:50px 0;
 }
 
 h1,h2,h3{
@@ -39,13 +41,91 @@ a{
 text-decoration:none;
 }
 
+p{
+font-size:15px;
+}
+
+ul{
+padding-left:20px;
+}
+
+li{
+margin-bottom:8px;
+}
+
+.navbar{
+position:sticky;
+top:0;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.08);
+z-index:1000;
+}
+
+.nav-container{
+max-width:1100px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 0;
+}
+
+.logo{
+font-weight:bold;
+font-size:18px;
+}
+
+.nav-links a{
+margin-left:20px;
+color:#333;
+font-weight:500;
+}
+
+.nav-links a:hover{
+color:#0b57d0;
+}
+
+.profile-card{
+background:white;
+border-radius:20px;
+padding:30px;
+display:flex;
+align-items:center;
+gap:30px;
+box-shadow:0 4px 20px rgba(0,0,0,0.08);
+margin-top:40px;
+}
+
+.profile-card img{
+width:180px;
+height:180px;
+object-fit:cover;
+border-radius:20px;
+}
+
+.hero-content h1{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.hero-content h3{
+font-weight:normal;
+color:#444;
+}
+
+.tagline{
+margin:12px 0;
+font-weight:bold;
+color:#0b57d0;
+}
+
 .btn{
 display:inline-block;
-padding:12px 22px;
+padding:10px 18px;
 border-radius:8px;
-margin-right:10px;
-margin-top:15px;
 font-weight:bold;
+margin-right:10px;
+margin-top:10px;
 }
 
 .btn-primary{
@@ -59,66 +139,78 @@ border:1px solid #ccc;
 color:#222;
 }
 
-.hero{
-display:flex;
-align-items:center;
-justify-content:space-between;
-gap:40px;
-padding:80px 0;
-}
-
-.hero img{
-width:280px;
-border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,0.15);
-}
-
-.hero-text{
-flex:1;
-}
-
-.hero-text h1{
-font-size:52px;
-}
-
-.hero-text p{
-font-size:20px;
-margin-top:10px;
-}
-
-.project-banner{
-width:100%;
-border-radius:15px;
-box-shadow:0 5px 20px rgba(0,0,0,0.1);
-margin-top:20px;
+.btn:hover{
+opacity:0.9;
 }
 
 .skills-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
 gap:20px;
 }
 
 .skill-card{
 background:white;
 padding:25px;
-border-radius:12px;
-box-shadow:0 3px 10px rgba(0,0,0,0.08);
+border-radius:15px;
+box-shadow:0 3px 12px rgba(0,0,0,0.08);
 }
 
 .project-card{
 background:white;
-padding:30px;
+padding:25px;
 border-radius:15px;
-margin-top:30px;
-box-shadow:0 3px 15px rgba(0,0,0,0.08);
+box-shadow:0 3px 12px rgba(0,0,0,0.08);
+margin-bottom:30px;
+}
+
+.project-banner{
+width:100%;
+border-radius:12px;
+margin:15px 0;
+}
+
+.experience-card,
+.education-card,
+.achievement-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 3px 12px rgba(0,0,0,0.08);
+margin-bottom:20px;
+}
+
+.contact{
+text-align:center;
 }
 
 footer{
 text-align:center;
-padding:40px;
-background:#fff;
-margin-top:50px;
+padding:30px;
+margin-top:40px;
+background:white;
+}
+
+@media(max-width:768px){
+
+.profile-card{
+flex-direction:column;
+text-align:center;
+}
+
+.profile-card img{
+width:220px;
+height:220px;
+}
+
+.hero-content h1{
+font-size:34px;
+}
+
+.nav-links{
+display:none;
+}
+
 }
 
 </style>
@@ -127,22 +219,48 @@ margin-top:50px;
 
 <body>
 
+<nav class="navbar">
+
+<div class="nav-container">
+
+<div class="logo">
+Chandni Verma
+</div>
+
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#experience">Experience</a>
+<a href="#education">Education</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
+
+</nav>
+
 <div class="container">
 
-<section class="hero">
+<section>
 
-<img src="assets/profile_photo.jpeg">
+<div class="profile-card">
 
-<div class="hero-text">
+<img src="assets/profile_photo.jpeg" alt="Chandni Verma">
+
+<div class="hero-content">
 
 <h1>Chandni Verma</h1>
 
-<p>
-Remote Sensing & GIS Professional
+<h3>Remote Sensing & Geospatial Professional</h3>
+
+<p class="tagline">
+Remote Sensing | GIS | Python | InSAR | DEM Analysis
 </p>
 
 <p>
-Satellite Image Processing • InSAR Analysis • DEM-based Terrain Analysis • Geospatial Automation
+M.Tech in Remote Sensing & GIS (Geosciences)<br>
+Indian Institute of Remote Sensing (ISRO)
 </p>
 
 <a class="btn btn-primary"
@@ -165,23 +283,78 @@ LinkedIn
 
 </div>
 
+</div>
+
 </section>
 
-<section>
+<section id="about">
 
-<h2>Featured Project</h2>
+<h2>About Me</h2>
+
+<p>
+
+Remote Sensing & Geospatial Professional with expertise in satellite image processing, InSAR analysis, DEM-based terrain analysis, GIS workflows, and Python-based geospatial automation.
+
+Experienced in processing Sentinel-1 SAR, Landsat 8 optical imagery, Digital Elevation Models (DEMs), and multi-source geospatial datasets for terrain analysis, environmental monitoring, and geospatial research.
+
+Developer of GeoProfiler, an open-source web application for automated extraction and visualization of topographic line and swath profiles.
+
+</p>
+
+</section>
+
+<section id="skills">
+
+<h2>Technical Expertise</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<h3>Remote Sensing</h3>
+<p>
+Landsat • Sentinel • Optical Image Processing • Change Detection
+</p>
+</div>
+
+<div class="skill-card">
+<h3>SAR & InSAR</h3>
+<p>
+DInSAR • PS-InSAR • SNAP • SARPROZ
+</p>
+</div>
+
+<div class="skill-card">
+<h3>GIS & Terrain Analysis</h3>
+<p>
+ArcGIS • QGIS • DEM Analysis • Watershed Delineation
+</p>
+</div>
+
+<div class="skill-card">
+<h3>Programming</h3>
+<p>
+Python • Rasterio • GeoPandas • Streamlit • MATLAB
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="projects">
+
+<h2>Featured Projects</h2>
+
+<div class="project-card">
 
 <h3>GeoProfiler Web Application</h3>
 
 <p>
-Open-source geospatial web application for extracting and visualizing topographic line and swath profiles from DEM datasets through an intuitive browser-based workflow.
+Open-source geospatial web application for extracting and visualizing topographic line and swath profiles from DEM datasets.
 </p>
 
-<img
-src="assets/GeoProfiler_WebApp_banner.png"
+<img src="assets/GeoProfiler_WebApp_banner.png"
 class="project-banner">
-
-<br><br>
 
 <a class="btn btn-primary"
 href="https://geoprofiler.streamlit.app"
@@ -192,66 +365,21 @@ Live Demo
 <a class="btn btn-secondary"
 href="https://github.com/chandnivermageo/GeoProfiler-WebApp"
 target="_blank">
-GitHub Repository
+GitHub
 </a>
 
-</section>
-
-<section>
-
-<h2>About Me</h2>
-
-<p>
-Remote sensing and geospatial professional specializing in satellite image processing, DEM-based terrain analysis, SAR interferometry, and Python-driven geospatial workflow automation. Experienced in developing scalable geospatial tools and processing multi-source satellite datasets including Sentinel-1, Landsat 8, GRACE, and Digital Elevation Models.
-</p>
-
-</section>
-
-<section>
-
-<h2>Technical Expertise</h2>
-
-<div class="skills-grid">
-
-<div class="skill-card">
-<h3>Satellite Image Processing</h3>
-<p>Landsat • Sentinel • Change Detection • Optical Analysis</p>
 </div>
-
-<div class="skill-card">
-<h3>SAR & InSAR</h3>
-<p>DInSAR • PS-InSAR • SARPROZ • SNAP</p>
-</div>
-
-<div class="skill-card">
-<h3>GIS & Terrain Analysis</h3>
-<p>DEM Analysis • Watershed Delineation • Geomorphology</p>
-</div>
-
-<div class="skill-card">
-<h3>Python & Automation</h3>
-<p>Rasterio • GeoPandas • NumPy • Streamlit • MATLAB</p>
-</div>
-
-</div>
-
-</section>
-
-<section>
-
-<h2>Projects</h2>
 
 <div class="project-card">
 
 <h3>Snow Cover Delineation & Change Detection</h3>
 
-<img
-src="assets/snow_cover_change_detection_banner.png"
-class="project-banner">
-
 <p>
-Automated Python workflow for snow-cover delineation and temporal change analysis using Landsat 8 imagery and DEM integration.
+Temporal snow-cover change analysis using Landsat 8 imagery and DEM integration over the Siachen Glacier region.
 </p>
+
+<img src="assets/snow_cover_change_detection_banner.png"
+class="project-banner">
 
 <a class="btn btn-secondary"
 href="https://github.com/chandnivermageo/Snow-Cover-Change-Detection"
@@ -263,43 +391,55 @@ View Project
 
 </section>
 
-<section>
+<section id="experience">
 
 <h2>Experience</h2>
 
+<div class="experience-card">
+
 <h3>CSIR – Central Scientific Instruments Organisation</h3>
 
-<p>
-Junior Research Fellow | Sep 2024 – Mar 2026
-</p>
+<p><b>Junior Research Fellow</b> | Sep 2024 – Mar 2026</p>
 
-<p>
-Developed GeoProfiler, conducted geomorphic, hydrological and morphotectonic analyses, performed watershed delineation, drainage network analysis, terrace mapping and field validation.
-</p>
+<ul>
+<li>Developed GeoProfiler for automated terrain-profile extraction.</li>
+<li>Conducted DEM-based geomorphic and hydrological analysis.</li>
+<li>Performed watershed delineation and drainage-network analysis.</li>
+<li>Executed field investigations across Himachal Pradesh.</li>
+<li>Prepared scientific visualizations and technical documentation.</li>
+</ul>
+
+</div>
 
 </section>
 
-<section>
+<section id="education">
 
 <h2>Education</h2>
 
+<div class="education-card">
+
 <p>
-<b>M.Tech Remote Sensing & GIS (Geosciences)</b><br>
-Indian Institute of Remote Sensing (IIRS), ISRO
+<b>M.Tech in Remote Sensing & GIS (Geosciences)</b><br>
+Indian Institute of Remote Sensing (ISRO)
 </p>
 
 <br>
 
 <p>
-<b>M.Sc Geology</b><br>
+<b>M.Sc. Geology</b><br>
 Panjab University
 </p>
+
+</div>
 
 </section>
 
 <section>
 
 <h2>Achievements</h2>
+
+<div class="achievement-card">
 
 <ul>
 <li>GATE 2025 AIR 153 (Geomatics)</li>
@@ -308,16 +448,36 @@ Panjab University
 <li>AICTE M.Tech Scholarship Recipient</li>
 </ul>
 
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Connect</h2>
+
+<div class="contact">
+
+<a class="btn btn-secondary"
+href="https://github.com/chandnivermageo"
+target="_blank">
+GitHub
+</a>
+
+<a class="btn btn-secondary"
+href="https://www.linkedin.com/in/chandni-verma-geo"
+target="_blank">
+LinkedIn
+</a>
+
+</div>
+
 </section>
 
 </div>
 
 <footer>
-
-<p>
 © 2026 Chandni Verma
-</p>
-
 </footer>
 
 </body>
