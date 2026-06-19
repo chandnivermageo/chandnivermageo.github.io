@@ -1,20 +1,324 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Chandni Verma</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chandni Verma | Remote Sensing & GIS Professional</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#f8f9fb;
+color:#222;
+line-height:1.6;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+section{
+padding:60px 0;
+}
+
+h1,h2,h3{
+margin-bottom:15px;
+}
+
+a{
+text-decoration:none;
+}
+
+.btn{
+display:inline-block;
+padding:12px 22px;
+border-radius:8px;
+margin-right:10px;
+margin-top:15px;
+font-weight:bold;
+}
+
+.btn-primary{
+background:#0b57d0;
+color:white;
+}
+
+.btn-secondary{
+background:white;
+border:1px solid #ccc;
+color:#222;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:40px;
+padding:80px 0;
+}
+
+.hero img{
+width:280px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.hero-text{
+flex:1;
+}
+
+.hero-text h1{
+font-size:52px;
+}
+
+.hero-text p{
+font-size:20px;
+margin-top:10px;
+}
+
+.project-banner{
+width:100%;
+border-radius:15px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+margin-top:20px;
+}
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.skill-card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 3px 10px rgba(0,0,0,0.08);
+}
+
+.project-card{
+background:white;
+padding:30px;
+border-radius:15px;
+margin-top:30px;
+box-shadow:0 3px 15px rgba(0,0,0,0.08);
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#fff;
+margin-top:50px;
+}
+
+</style>
+
 </head>
 
 <body>
-    <h1>Chandni Verma</h1>
 
-    <h3>Remote Sensing & GIS Professional</h3>
+<div class="container">
 
-    <p>
-        M.Tech in Remote Sensing & GIS from IIRS-ISRO
-    </p>
+<section class="hero">
 
-    <p>
-        Satellite Image Processing • InSAR Analysis • Python Geospatial Automation
-    </p>
+<img src="assets/profile_photo.jpeg">
+
+<div class="hero-text">
+
+<h1>Chandni Verma</h1>
+
+<p>
+Remote Sensing & GIS Professional
+</p>
+
+<p>
+Satellite Image Processing • InSAR Analysis • DEM-based Terrain Analysis • Geospatial Automation
+</p>
+
+<a class="btn btn-primary"
+href="assets/Chandni_Verma_Resume.pdf"
+target="_blank">
+Download Resume
+</a>
+
+<a class="btn btn-secondary"
+href="https://github.com/chandnivermageo"
+target="_blank">
+GitHub
+</a>
+
+<a class="btn btn-secondary"
+href="https://www.linkedin.com/in/chandni-verma-geo"
+target="_blank">
+LinkedIn
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Featured Project</h2>
+
+<h3>GeoProfiler Web Application</h3>
+
+<p>
+Open-source geospatial web application for extracting and visualizing topographic line and swath profiles from DEM datasets through an intuitive browser-based workflow.
+</p>
+
+<img
+src="assets/GeoProfiler_WebApp_banner.png"
+class="project-banner">
+
+<br><br>
+
+<a class="btn btn-primary"
+href="https://geoprofiler.streamlit.app"
+target="_blank">
+Live Demo
+</a>
+
+<a class="btn btn-secondary"
+href="https://github.com/chandnivermageo/GeoProfiler-WebApp"
+target="_blank">
+GitHub Repository
+</a>
+
+</section>
+
+<section>
+
+<h2>About Me</h2>
+
+<p>
+Remote sensing and geospatial professional specializing in satellite image processing, DEM-based terrain analysis, SAR interferometry, and Python-driven geospatial workflow automation. Experienced in developing scalable geospatial tools and processing multi-source satellite datasets including Sentinel-1, Landsat 8, GRACE, and Digital Elevation Models.
+</p>
+
+</section>
+
+<section>
+
+<h2>Technical Expertise</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+<h3>Satellite Image Processing</h3>
+<p>Landsat • Sentinel • Change Detection • Optical Analysis</p>
+</div>
+
+<div class="skill-card">
+<h3>SAR & InSAR</h3>
+<p>DInSAR • PS-InSAR • SARPROZ • SNAP</p>
+</div>
+
+<div class="skill-card">
+<h3>GIS & Terrain Analysis</h3>
+<p>DEM Analysis • Watershed Delineation • Geomorphology</p>
+</div>
+
+<div class="skill-card">
+<h3>Python & Automation</h3>
+<p>Rasterio • GeoPandas • NumPy • Streamlit • MATLAB</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Projects</h2>
+
+<div class="project-card">
+
+<h3>Snow Cover Delineation & Change Detection</h3>
+
+<img
+src="assets/snow_cover_change_detection_banner.png"
+class="project-banner">
+
+<p>
+Automated Python workflow for snow-cover delineation and temporal change analysis using Landsat 8 imagery and DEM integration.
+</p>
+
+<a class="btn btn-secondary"
+href="https://github.com/chandnivermageo/Snow-Cover-Change-Detection"
+target="_blank">
+View Project
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Experience</h2>
+
+<h3>CSIR – Central Scientific Instruments Organisation</h3>
+
+<p>
+Junior Research Fellow | Sep 2024 – Mar 2026
+</p>
+
+<p>
+Developed GeoProfiler, conducted geomorphic, hydrological and morphotectonic analyses, performed watershed delineation, drainage network analysis, terrace mapping and field validation.
+</p>
+
+</section>
+
+<section>
+
+<h2>Education</h2>
+
+<p>
+<b>M.Tech Remote Sensing & GIS (Geosciences)</b><br>
+Indian Institute of Remote Sensing (IIRS), ISRO
+</p>
+
+<br>
+
+<p>
+<b>M.Sc Geology</b><br>
+Panjab University
+</p>
+
+</section>
+
+<section>
+
+<h2>Achievements</h2>
+
+<ul>
+<li>GATE 2025 AIR 153 (Geomatics)</li>
+<li>GATE 2024 AIR 239 (Geomatics)</li>
+<li>GATE 2022 AIR 763 (Geology)</li>
+<li>AICTE M.Tech Scholarship Recipient</li>
+</ul>
+
+</section>
+
+</div>
+
+<footer>
+
+<p>
+© 2026 Chandni Verma
+</p>
+
+</footer>
+
 </body>
 </html>
