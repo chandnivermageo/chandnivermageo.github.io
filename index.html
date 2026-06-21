@@ -13,12 +13,11 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-scroll-behavior:smooth;
 }
 
 body{
 font-family:Arial, sans-serif;
-background:#f3f7fb;
+background:#eef3f8;
 color:#222;
 line-height:1.6;
 }
@@ -29,131 +28,87 @@ max-width:1100px;
 margin:auto;
 }
 
-section{
-padding:50px 0;
-}
-
-h1,h2,h3{
-margin-bottom:15px;
-}
-
-  h2{
-color:#0F2744;
-position:relative;
-padding-bottom:12px;
-margin-bottom:25px;
-}
-
-h2::after{
-content:"";
-position:absolute;
-left:0;
-bottom:0;
-width:60px;
-height:3px;
-background:#1e88e5;
-border-radius:10px;
-}
-  
-a{
-text-decoration:none;
-}
-
-p{
-font-size:15px;
-}
-
-ul{
-padding-left:20px;
-}
-
-li{
-margin-bottom:8px;
-}
-
 .navbar{
+background:#0f2d52;
+padding:18px 0;
 position:sticky;
 top:0;
-background:#0F2744;
-box-shadow:0 2px 12px rgba(0,0,0,0.15);
 z-index:1000;
 }
 
 .nav-container{
-max-width:1100px;
-margin:auto;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 0;
+max-width:1100px;
+margin:auto;
 }
 
 .logo{
-font-weight:bold;
-font-size:18px;
 color:white;
+font-weight:bold;
+font-size:20px;
 }
 
 .nav-links a{
-margin-left:20px;
 color:white;
-font-weight:500;
+margin-left:25px;
+text-decoration:none;
+font-size:15px;
 }
 
 .nav-links a:hover{
-color:#90caf9;
+opacity:0.8;
 }
 
-.profile-card{
-background:linear-gradient(
-135deg,
-#ffffff,
-#eef6ff
-);
-border:1px solid #dbe7f5;
+.hero{
+background:white;
+padding:40px;
 border-radius:20px;
-padding:30px;
+margin-top:40px;
 display:flex;
 align-items:center;
-gap:30px;
-box-shadow:0 4px 20px rgba(0,0,0,0.08);
-margin-top:40px;
+gap:35px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
 }
 
-.profile-card img{
+.hero img{
 width:220px;
-height:auto;
-border-radius:20px;
-box-shadow:0 6px 18px rgba(0,0,0,0.12);
+height:260px;
+object-fit:cover;
+object-position:center top;
+border-radius:18px;
 }
 
-.hero-content h1{
-font-size:42px;
+.hero-text h1{
+font-size:48px;
 margin-bottom:10px;
+color:#0f2d52;
 }
 
-.hero-content h3{
+.hero-text h3{
 font-weight:normal;
-color:#444;
+color:#555;
 }
 
 .tagline{
-margin:12px 0;
+margin:15px 0;
 font-weight:bold;
-color:#0b57d0;
+color:#1565c0;
 }
 
 .btn{
 display:inline-block;
-padding:10px 18px;
+padding:10px 20px;
 border-radius:8px;
+text-decoration:none;
 font-weight:bold;
 margin-right:10px;
 margin-top:10px;
 }
 
 .btn-primary{
-background:#0b57d0;
+background:#1565c0;
 color:white;
 }
 
@@ -163,8 +118,22 @@ border:1px solid #ccc;
 color:#222;
 }
 
-.btn:hover{
-opacity:0.9;
+section{
+padding:60px 0;
+}
+
+.section-title{
+font-size:32px;
+color:#0f2d52;
+margin-bottom:20px;
+}
+
+.about-card,
+.contact-card{
+background:white;
+padding:30px;
+border-radius:16px;
+box-shadow:0 4px 15px rgba(0,0,0,0.08);
 }
 
 .skills-grid{
@@ -177,69 +146,49 @@ gap:20px;
 background:white;
 padding:25px;
 border-radius:15px;
-box-shadow:0 3px 12px rgba(0,0,0,0.08);
-border-top:4px solid #1e88e5;
-transition:0.3s;
-}
-
-.skill-card:hover{
-transform:translateY(-5px);
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+border-top:4px solid #1565c0;
 }
 
 .project-card{
 background:white;
 padding:25px;
 border-radius:15px;
-box-shadow:0 3px 12px rgba(0,0,0,0.08);
-margin-bottom:30px;
-border-left:5px solid #1e88e5;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+margin-bottom:25px;
 }
 
-.project-banner{
-width:100%;
-border-radius:12px;
-margin:15px 0;
-}
-
-.experience-card,
-.education-card,
-.achievement-card{
-background:white;
-padding:25px;
-border-radius:15px;
-box-shadow:0 3px 12px rgba(0,0,0,0.08);
-margin-bottom:20px;
-}
-
-.contact{
-text-align:center;
+.project-card h3{
+color:#0f2d52;
+margin-bottom:10px;
 }
 
 footer{
+background:#0f2d52;
+color:white;
 text-align:center;
-padding:30px;
-margin-top:40px;
-background:white;
+padding:25px;
+margin-top:50px;
 }
 
 @media(max-width:768px){
 
-.profile-card{
+.hero{
 flex-direction:column;
 text-align:center;
 }
 
-.profile-card img{
-width:220px;
-height:220px;
-}
-
-.hero-content h1{
-font-size:34px;
+.hero img{
+width:250px;
+height:300px;
 }
 
 .nav-links{
 display:none;
+}
+
+.hero-text h1{
+font-size:36px;
 }
 
 }
@@ -259,12 +208,10 @@ Chandni Verma
 </div>
 
 <div class="nav-links">
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#experience">Experience</a>
-<a href="#education">Education</a>
-<a href="#contact">Contact</a>
+<a href="index.html">Home</a>
+<a href="projects.html">Projects</a>
+<a href="experience.html">Experience</a>
+<a href="education.html">Education</a>
 </div>
 
 </div>
@@ -273,13 +220,15 @@ Chandni Verma
 
 <div class="container">
 
+<!-- HERO -->
+
 <section>
 
-<div class="profile-card">
+<div class="hero">
 
 <img src="assets/profile_photo.jpeg" alt="Chandni Verma">
 
-<div class="hero-content">
+<div class="hero-text">
 
 <h1>Chandni Verma</h1>
 
@@ -318,85 +267,76 @@ LinkedIn
 
 </section>
 
-<section id="about">
+<!-- ABOUT -->
 
-<h2>About Me</h2>
+<section>
+
+<h2 class="section-title">About Me</h2>
+
+<div class="about-card">
 
 <p>
 
 Remote Sensing & Geospatial Professional with expertise in satellite image processing, InSAR analysis, DEM-based terrain analysis, GIS workflows, and Python-based geospatial automation.
 
-Experienced in processing Sentinel-1 SAR, Landsat 8 optical imagery, Digital Elevation Models (DEMs), and multi-source geospatial datasets for terrain analysis, environmental monitoring, and geospatial research.
+Experienced in processing Sentinel-1 SAR, Landsat 8 optical imagery, Digital Elevation Models (DEMs), and multi-source geospatial datasets for environmental monitoring, terrain analysis, and geoscience research.
 
-Developer of GeoProfiler, an open-source web application for automated extraction and visualization of topographic line and swath profiles.
+Developer of GeoProfiler, an open-source geospatial web application for automated extraction and visualization of topographic line and swath profiles.
 
 </p>
 
+</div>
+
 </section>
 
-<section id="skills">
+<!-- SKILLS -->
 
-<h2>Technical Expertise</h2>
+<section>
+
+<h2 class="section-title">Technical Expertise</h2>
 
 <div class="skills-grid">
 
 <div class="skill-card">
 <h3>Remote Sensing</h3>
-<p>
-Landsat • Sentinel • Optical Image Processing • Change Detection
-</p>
+<p>Landsat • Sentinel • Optical Processing • Change Detection</p>
 </div>
 
 <div class="skill-card">
 <h3>SAR & InSAR</h3>
-<p>
-DInSAR • PS-InSAR • SNAP • SARPROZ
-</p>
+<p>DInSAR • PS-InSAR • SNAP • SARPROZ</p>
 </div>
 
 <div class="skill-card">
 <h3>GIS & Terrain Analysis</h3>
-<p>
-ArcGIS • QGIS • DEM Analysis • Watershed Delineation
-</p>
+<p>ArcGIS • QGIS • DEM Analysis • Watersheds</p>
 </div>
 
 <div class="skill-card">
 <h3>Programming</h3>
-<p>
-Python • Rasterio • GeoPandas • Streamlit • MATLAB
-</p>
+<p>Python • Rasterio • GeoPandas • Streamlit • MATLAB</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="projects">
+<!-- PROJECT PREVIEW -->
 
-<h2>Featured Projects</h2>
+<section>
+
+<h2 class="section-title">Featured Projects</h2>
 
 <div class="project-card">
 
 <h3>GeoProfiler Web Application</h3>
 
 <p>
-Open-source geospatial web application for extracting and visualizing topographic line and swath profiles from DEM datasets.
+Python-based geospatial web application for extracting and visualizing topographic line and swath profiles from DEM datasets.
 </p>
 
-<img src="assets/GeoProfiler_WebApp_banner.png"
-class="project-banner">
-
-<a class="btn btn-primary"
-href="https://geoprofiler.streamlit.app"
-target="_blank">
-Live Demo
-</a>
-
-<a class="btn btn-secondary"
-href="https://github.com/chandnivermageo/GeoProfiler-WebApp"
-target="_blank">
-GitHub
+<a class="btn btn-primary" href="projects.html">
+View Project
 </a>
 
 </div>
@@ -406,15 +346,10 @@ GitHub
 <h3>Snow Cover Delineation & Change Detection</h3>
 
 <p>
-Temporal snow-cover change analysis using Landsat 8 imagery and DEM integration over the Siachen Glacier region.
+Landsat 8 and DEM-based workflow for temporal snow-cover mapping and elevation-wise snow-distribution analysis.
 </p>
 
-<img src="assets/snow_cover_change_detection_banner.png"
-class="project-banner">
-
-<a class="btn btn-secondary"
-href="https://github.com/chandnivermageo/Snow-Cover-Change-Detection"
-target="_blank">
+<a class="btn btn-primary" href="projects.html">
 View Project
 </a>
 
@@ -425,81 +360,30 @@ View Project
 <h3>Land Subsidence Characterization using Sentinel-1 InSAR</h3>
 
 <p>
-Processed 151 Sentinel-1 SLC scenes using DInSAR and PS-InSAR workflows to investigate land subsidence associated with groundwater depletion in Northwest India.
-
-Integrated deformation results with groundwater, hydrogeological, and geological datasets for interpretation.
+Processed 151 Sentinel-1 scenes using DInSAR and PS-InSAR workflows to investigate groundwater-induced land subsidence in Northwest India.
 </p>
 
-</div>
-  
-</section>
-
-<section id="experience">
-
-<h2>Experience</h2>
-
-<div class="experience-card">
-
-<h3>CSIR – Central Scientific Instruments Organisation</h3>
-
-<p><b>Junior Research Fellow</b> | Sep 2024 – Mar 2026</p>
-
-<ul>
-<li>Developed GeoProfiler for automated terrain-profile extraction.</li>
-<li>Conducted DEM-based geomorphic and hydrological analysis.</li>
-<li>Performed watershed delineation and drainage-network analysis.</li>
-<li>Executed field investigations across Himachal Pradesh.</li>
-<li>Prepared scientific visualizations and technical documentation.</li>
-</ul>
+<a class="btn btn-primary" href="projects.html">
+View Project
+</a>
 
 </div>
 
 </section>
 
-<section id="education">
-
-<h2>Education</h2>
-
-<div class="education-card">
-
-<p>
-<b>M.Tech in Remote Sensing & GIS (Geosciences)</b><br>
-Indian Institute of Remote Sensing (ISRO)
-</p>
-
-<br>
-
-<p>
-<b>M.Sc. Geology</b><br>
-Panjab University
-</p>
-
-</div>
-
-</section>
+<!-- CONTACT -->
 
 <section>
 
-<h2>Achievements</h2>
+<h2 class="section-title">Connect</h2>
 
-<div class="achievement-card">
+<div class="contact-card">
 
-<ul>
-<li>GATE 2025 AIR 153 (Geomatics)</li>
-<li>GATE 2024 AIR 239 (Geomatics)</li>
-<li>GATE 2022 AIR 763 (Geology)</li>
-<li>AICTE M.Tech Scholarship Recipient</li>
-</ul>
+<p>
+📧 chandniverma.geo@gmail.com
+</p>
 
-</div>
-
-</section>
-
-<section id="contact">
-
-<h2>Connect</h2>
-
-<div class="contact">
+<br>
 
 <a class="btn btn-secondary"
 href="https://github.com/chandnivermageo"
@@ -521,13 +405,7 @@ LinkedIn
 
 <footer>
 
-<p><strong>Chandni Verma</strong></p>
-
 <p>
-Remote Sensing | GIS | Python | InSAR | DEM Analysis
-</p>
-
-<p style="margin-top:10px;">
 © 2026 Chandni Verma
 </p>
 
