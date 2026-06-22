@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Chandni Verma | Remote Sensing & Geospatial Professional</title>
+<title>Chandni Verma | Remote Sensing & GIS Professional</title>
 
 <style>
 
@@ -16,7 +16,7 @@ box-sizing:border-box;
 }
 
 body{
-font-family:Arial, sans-serif;
+font-family:Arial,sans-serif;
 background:#eef3f8;
 color:#222;
 line-height:1.6;
@@ -27,6 +27,10 @@ width:92%;
 max-width:1200px;
 margin:auto;
 }
+
+/* =========================
+   NAVBAR
+========================= */
 
 .navbar{
 background:#0f2d52;
@@ -65,64 +69,84 @@ font-size:15px;
 opacity:0.8;
 }
 
-.hero{
-background:white;
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero-grid{
+display:grid;
+grid-template-columns:320px 1fr;
+gap:30px;
 margin-top:40px;
-padding:40px;
+}
+
+.profile-card,
+.summary-card{
+background:white;
+padding:30px;
 border-radius:20px;
-display:flex;
-gap:40px;
-align-items:center;
 box-shadow:0 4px 15px rgba(0,0,0,0.08);
 }
 
-.hero img{
-width:250px;
-height:300px;
+.profile-card{
+text-align:center;
+}
+
+.profile-card img{
+width:220px;
+height:270px;
 object-fit:cover;
 object-position:center top;
 border-radius:18px;
+margin-bottom:20px;
 }
 
-.hero-content{
-flex:1;
+.profile-card h2{
+color:#0f2d52;
+margin-bottom:8px;
 }
 
-.hero-content h1{
-font-size:48px;
+.profile-role{
+color:#666;
+margin-bottom:15px;
+}
+
+.profile-email{
+margin-bottom:15px;
+font-size:14px;
+}
+
+.summary-card h1{
+font-size:42px;
 color:#0f2d52;
 margin-bottom:10px;
 }
 
-.hero-content h3{
-font-weight:normal;
-color:#555;
-margin-bottom:15px;
-}
-
 .tagline{
-font-weight:bold;
 color:#1565c0;
+font-weight:bold;
 margin-bottom:20px;
 }
 
-.hero-content ul{
+.summary-card ul{
 padding-left:20px;
-margin-bottom:15px;
 }
 
-.hero-content li{
-margin-bottom:8px;
+.summary-card li{
+margin-bottom:10px;
 }
+
+/* =========================
+   BUTTONS
+========================= */
 
 .btn{
 display:inline-block;
-padding:10px 20px;
+padding:10px 18px;
 border-radius:8px;
 text-decoration:none;
 font-weight:bold;
-margin-right:10px;
-margin-top:10px;
+margin:5px;
 }
 
 .btn-primary{
@@ -131,31 +155,39 @@ color:white;
 }
 
 .btn-secondary{
-background:white;
 border:1px solid #ccc;
+background:white;
 color:#222;
 }
 
+/* =========================
+   SECTIONS
+========================= */
+
 section{
-padding:50px 0;
+padding:55px 0;
 }
 
 .section-title{
-font-size:30px;
+font-size:32px;
 color:#0f2d52;
-margin-bottom:20px;
+margin-bottom:25px;
 }
 
-.skills-grid{
+/* =========================
+   PROJECTS
+========================= */
+
+.projects-grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
 gap:20px;
 }
 
 .card{
 background:white;
 padding:25px;
-border-radius:15px;
+border-radius:16px;
 box-shadow:0 4px 12px rgba(0,0,0,0.08);
 }
 
@@ -164,13 +196,39 @@ color:#0f2d52;
 margin-bottom:10px;
 }
 
+/* =========================
+   TECHNICAL EXPERTISE
+========================= */
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.skill-card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 4px 12px rgba(0,0,0,0.08);
+border-top:4px solid #1565c0;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
 footer{
 background:#0f2d52;
 color:white;
 text-align:center;
 padding:25px;
-margin-top:50px;
+margin-top:40px;
 }
+
+/* =========================
+   MOBILE
+========================= */
 
 @media(max-width:768px){
 
@@ -182,34 +240,32 @@ gap:12px;
 .nav-links{
 flex-wrap:wrap;
 justify-content:center;
-gap:15px;
+gap:12px;
 }
 
-.hero{
-flex-direction:column;
-text-align:center;
+.hero-grid{
+grid-template-columns:1fr;
 }
 
-.hero img{
-width:220px;
-height:260px;
+.summary-card h1{
+font-size:32px;
 }
 
-.hero-content h1{
-font-size:36px;
-}
-
-.hero-content ul{
-text-align:left;
+.profile-card img{
+width:200px;
+height:250px;
 }
 
 }
 
 </style>
-
 </head>
 
 <body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
 
 <nav class="navbar">
 
@@ -233,39 +289,29 @@ Chandni Verma
 
 <div class="container">
 
+<!-- =========================
+     HERO + ABOUT
+========================= -->
+
 <section>
 
-<div class="hero">
+<div class="hero-grid">
+
+<!-- LEFT CARD -->
+
+<div class="profile-card">
 
 <img src="assets/profile_photo.jpeg" alt="Chandni Verma">
 
-<div class="hero-content">
+<h2>Chandni Verma</h2>
 
-<h1>Chandni Verma</h1>
-
-<h3>Remote Sensing & Geospatial Professional</h3>
-
-<p class="tagline">
-Remote Sensing | GIS | Python | InSAR | DEM Analysis
+<p class="profile-role">
+Remote Sensing & Geospatial Professional
 </p>
 
-<ul>
-<li>M.Tech in Remote Sensing & GIS (Geosciences), IIRS–ISRO</li>
-<li>M.Sc. Geology, Panjab University</li>
-<li>1.7+ Years Research Experience at CSIR–CSIO</li>
-<li>Processed 151 Sentinel-1 SAR scenes for InSAR analysis</li>
-<li>Developer of GeoProfiler Web Application</li>
-</ul>
-
-<p>
+<p class="profile-email">
 📧 chandniverma.geo@gmail.com
 </p>
-
-<a class="btn btn-primary"
-href="assets/Chandni_Verma_Resume.pdf"
-target="_blank">
-Download Resume
-</a>
 
 <a class="btn btn-secondary"
 href="https://github.com/chandnivermageo"
@@ -281,62 +327,152 @@ LinkedIn
 
 </div>
 
+<!-- RIGHT CARD -->
+
+<div class="summary-card">
+
+<h1>Chandni Verma</h1>
+
+<p class="tagline">
+Remote Sensing | GIS | Python | InSAR | DEM Analysis
+</p>
+
+<ul>
+
+<li>M.Tech in Remote Sensing & GIS (Geosciences), IIRS–ISRO</li>
+
+<li>M.Sc. Geology, Panjab University</li>
+
+<li>1.7+ Years Research Experience at CSIR–CSIO</li>
+
+<li>Processed 151 Sentinel-1 SAR scenes for land subsidence analysis</li>
+
+<li>Specialized in InSAR, GIS, DEM Analysis and Geospatial Automation</li>
+
+<li>Developer of GeoProfiler Web Application</li>
+
+<li>GATE Geomatics AIR 153 (2025)</li>
+
+</ul>
+
+<br>
+
+<a class="btn btn-primary" href="projects.html">
+Projects
+</a>
+
+<a class="btn btn-primary" href="experience.html">
+Experience
+</a>
+
+<a class="btn btn-primary" href="education.html">
+Education
+</a>
+
+<a class="btn btn-primary"
+href="assets/Chandni_Verma_Resume.pdf"
+target="_blank">
+Resume
+</a>
+
+</div>
+
 </div>
 
 </section>
 
+<!-- =========================
+     FEATURED PROJECTS
+========================= -->
+
 <section>
 
-<h2 class="section-title">Career Snapshot</h2>
+<h2 class="section-title">
+Featured Projects
+</h2>
 
-<div class="skills-grid">
+<div class="projects-grid">
 
 <div class="card">
-<h3>1.7+</h3>
-<p>Years Research Experience</p>
+
+<h3>GeoProfiler Web Application</h3>
+
+<p>
+Python-based geospatial web application for extracting and visualizing topographic line and swath profiles from DEM datasets.
+</p>
+
+<br>
+
+<a class="btn btn-primary" href="projects.html">
+View Project
+</a>
+
 </div>
 
 <div class="card">
-<h3>151</h3>
-<p>Sentinel-1 Scenes Processed</p>
+
+<h3>Land Subsidence Characterization</h3>
+
+<p>
+Processed 151 Sentinel-1 scenes using DInSAR and PS-InSAR workflows to investigate groundwater-induced land subsidence.
+</p>
+
+<br>
+
+<a class="btn btn-primary" href="projects.html">
+View Project
+</a>
+
 </div>
 
 <div class="card">
-<h3>3</h3>
-<p>Major Geospatial Projects</p>
-</div>
 
-<div class="card">
-<h3>AIR 153</h3>
-<p>GATE Geomatics 2025</p>
+<h3>Snow Cover Change Detection</h3>
+
+<p>
+Landsat-8 and DEM-based workflow for snow-cover mapping and elevation-wise snow-distribution analysis.
+</p>
+
+<br>
+
+<a class="btn btn-primary" href="projects.html">
+View Project
+</a>
+
 </div>
 
 </div>
 
 </section>
 
+<!-- =========================
+     TECHNICAL EXPERTISE
+========================= -->
+
 <section>
 
-<h2 class="section-title">Technical Expertise</h2>
+<h2 class="section-title">
+Technical Expertise
+</h2>
 
 <div class="skills-grid">
 
-<div class="card">
+<div class="skill-card">
 <h3>Remote Sensing</h3>
 <p>Landsat • Sentinel • Optical Processing • Change Detection</p>
 </div>
 
-<div class="card">
+<div class="skill-card">
 <h3>SAR & InSAR</h3>
 <p>DInSAR • PS-InSAR • SNAP • SARPROZ</p>
 </div>
 
-<div class="card">
+<div class="skill-card">
 <h3>GIS & Terrain Analysis</h3>
-<p>ArcGIS • QGIS • DEM Analysis • Watersheds</p>
+<p>ArcGIS • QGIS • DEM Analysis • Watershed Analysis</p>
 </div>
 
-<div class="card">
+<div class="skill-card">
 <h3>Programming</h3>
 <p>Python • Rasterio • GeoPandas • Streamlit • MATLAB</p>
 </div>
@@ -345,36 +481,12 @@ LinkedIn
 
 </section>
 
-<section>
-
-<h2 class="section-title">Connect</h2>
-
-<div class="card">
-
-<p>📧 chandniverma.geo@gmail.com</p>
-
-<br>
-
-<a class="btn btn-secondary"
-href="https://github.com/chandnivermageo"
-target="_blank">
-GitHub
-</a>
-
-<a class="btn btn-secondary"
-href="https://www.linkedin.com/in/chandni-verma-geo"
-target="_blank">
-LinkedIn
-</a>
-
-</div>
-
-</section>
-
 </div>
 
 <footer>
+
 © 2026 Chandni Verma
+
 </footer>
 
 </body>
