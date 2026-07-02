@@ -131,6 +131,20 @@ font-size:15px;
 .impact b{
 color:#0f2d52;
 }
+
+#geoprofiler-demo{
+margin-top:30px;
+}
+
+#geoprofiler-demo h3{
+color:#0f2d52;
+margin-bottom:15px;
+}
+#geoprofiler-demo video{
+width:100%;
+border-radius:12px;
+box-shadow:0 4px 15px rgba(0,0,0,0.12);
+}
   
 </style>
 </head>
@@ -172,7 +186,6 @@ Remote Sensing, GIS, InSAR and Python-based geospatial projects.
 <h2>GeoProfiler Web Application</h2>
 
 <p>
-<p>
 An open-source web application for automated extraction and visualization of topographic line and swath profiles from DEM datasets.
 </p>
 
@@ -186,7 +199,7 @@ class="project-banner">
 <p class="tools">
 <b>Tools:</b> Python, Streamlit, Rasterio, GeoPandas, NumPy, SciPy, Matplotlib
 </p>
-  
+
 <a class="btn btn-primary"
 href="https://geoprofiler.streamlit.app"
 target="_blank">
@@ -199,15 +212,31 @@ target="_blank">
 GitHub Repository
 </a>
 
+<a class="btn btn-secondary"
+href="#geoprofiler-demo"
+onclick="showGeoProfilerDemo(); return false;">
+▶ Watch Demo
+</a>
+
+<div id="geoprofiler-demo" style="display:none; margin-top:30px;">
+
+<h3>Demo Video</h3>
+
+<video controls preload="metadata">
+<source src="assets/videos/geoprofiler_demo.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+
 </div>
 
+</div>
+  
 <!-- Snow -->
 
 <div class="project-card" id="snow-cover">
 
 <h2>Snow Cover Delineation & Change Detection</h2>
 
-<p>
 <p>
 Developed a Python-based workflow for snow-cover extraction and scene-based change detection using Landsat 8 imagery and DEM integration over the Siachen Glacier using observations from 2013 and 2022.
 </p>
@@ -268,6 +297,28 @@ Performed aquifer-system compaction modeling using piezometric groundwater-level
 </div>
 
 </div>
+
+<script>
+
+function showGeoProfilerDemo(){
+
+    const demo = document.getElementById("geoprofiler-demo");
+
+    if(demo.style.display === "block"){
+        demo.style.display = "none";
+        return;
+    }
+
+    demo.style.display = "block";
+
+    demo.scrollIntoView({
+        behavior:"smooth",
+        block:"start"
+    });
+
+}
+
+</script>
 
 </body>
 </html>
